@@ -3,7 +3,6 @@ from logging import debug
 from flask import Flask, request, json
 import requests
 
-url_setup = 'https://540b-91-90-187-214.eu.ngrok.io'
 host='127.0.0.1'
 
 def setupwebhook():
