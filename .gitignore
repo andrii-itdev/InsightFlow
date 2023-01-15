@@ -3,3 +3,8 @@
 ################################################################################
 
 /.vs
+/AtyService.Core/API.Test/bin/Debug/net6.0
+/AtyService.Core/.vs
+/AtyService.Core/API.Test/obj
+/AtyService.Core/AtyService.Core/bin/Debug/net6.0
+/AtyService.Core/AtyService.Core/obj
