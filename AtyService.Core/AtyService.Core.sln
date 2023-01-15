@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AtyService.Core", "AtyServi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AtyService.Tests", "API.Test\AtyService.Tests.csproj", "{8D415391-77E9-4F09-81BC-64AE799663DD}"
 EndProject
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Webhook.Client.Tests", "Webhook.Client.Tests\Webhook.Client.Tests.pyproj", "{8C0B2B8D-6398-4B37-B4AF-3585C4338FA0}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Webhook.Client.Tests", "Webhook.Client.Tests\Webhook.Client.Tests.pyproj", "{8C9DA754-A84E-4915-87D3-014C2D14A7AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,8 +23,8 @@ Global
 		{8D415391-77E9-4F09-81BC-64AE799663DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D415391-77E9-4F09-81BC-64AE799663DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D415391-77E9-4F09-81BC-64AE799663DD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8C0B2B8D-6398-4B37-B4AF-3585C4338FA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8C0B2B8D-6398-4B37-B4AF-3585C4338FA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C9DA754-A84E-4915-87D3-014C2D14A7AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C9DA754-A84E-4915-87D3-014C2D14A7AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
