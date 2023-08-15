@@ -9,17 +9,50 @@
 
 ## Project Objectives
 
+## Key Features
+
+* Real-time data streaming platform
+
+* Cloud-based data analytics platform
+
+* Big data processing and analysis platform
+
+* Configuration management
+
+* Business intelligence analytics platform
+
+* Real-time data monitoring and visualization
+
+* Secure application configuration management
+
 ## Functional Requirements
 
 * The application should provide real-time data analytics capabilities.
+
 * The application should display a live dashboard that presents real-time data and updates dynamically.
+
+* The application should provide real-time system performance metrics, server status, network health for anomalies or deviations.
+
 * The application should process data received from various sources for analysis.
-* The application should provide visualization features to present data in a visually appealing and understandable format.
+
 * The application should generate insights based on the processed data to aid decision-making.
-* The application should continuously monitor data and system performance for anomalies or deviations.
+
 * The application should provide an event-notification feed to alert users about important events or changes in the data.
 
+
+**Customization and Personalization**
+
+* Dashboard could be customized to display specific metrics and data relevant to individual users or stakeholders. This would allow users to focus on metrics and insights that are most important to their roles and responsibilities.
+
+* Dashboard consolidates data from different sources
+
+* Dashboard displays near real-time Data
+
 ## Non-Functional Requirements
+
+**Visualisation**
+
+* The application must have visualization capabilities that present data in an attractive and easily comprehensible manner.
 
 **Authentication:**
 
