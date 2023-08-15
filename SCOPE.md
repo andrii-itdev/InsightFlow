@@ -1,5 +1,5 @@
 
-[Project Name] Scope document
+InsightFlow Scope document
 
 ## General Overview
 
