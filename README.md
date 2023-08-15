@@ -1,7 +1,7 @@
 
 [Here's the logo]
 
-# [Project Name]
+# InsightFlow
 
 ## What the project does?
 
@@ -25,7 +25,7 @@
 
 ## Useful Links
 
-
+[Development docs](UsefulLinks.md)
 
 ## License
 
