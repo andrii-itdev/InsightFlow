@@ -17,17 +17,24 @@ namespace ProcessHub.Controllers
         }
 
         // POST api/<TaskManagerController>
-        [HttpPost]
-        public void InitiateTask([FromBody] string name)
+        [HttpPost("Initiate")]
+        public ActionResult<int> InitiateTask([FromBody] string name)
         {
-            _taskService.InitiateTask(name);
+            return _taskService.InitiateTask(name);
         }
 
-        // POST api/<TaskManagerController>/TaskHash
-        [HttpPost("{taskHash}")]
+        // POST api/<TaskManagerController>/Cancel/TaskHash
+        [HttpPost("Cancel/{taskHash}")]
         public void CancelTask(int taskHash)
         {
             _taskService.CancelTask(taskHash);
+        }
+
+        // POST api/<TaskManagerController>/Run/TaskHash
+        [HttpPost("Run/{taskHash}")]
+        public void RunTask(int taskHash) 
+        {
+            _taskService.RunTask(taskHash);
         }
     }
 }
