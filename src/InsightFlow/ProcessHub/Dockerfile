@@ -7,16 +7,16 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
-COPY ["ProcessHub/ProcessHub.csproj", "ProcessHub/"]
-RUN dotnet restore "ProcessHub/ProcessHub.csproj"
+COPY ["ProcessHub/ProcessHub.API.csproj", "ProcessHub/"]
+RUN dotnet restore "ProcessHub/ProcessHub.API.csproj"
 COPY . .
 WORKDIR "/src/ProcessHub"
-RUN dotnet build "ProcessHub.csproj" -c Release -o /app/build
+RUN dotnet build "ProcessHub.API.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "ProcessHub.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "ProcessHub.API.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "ProcessHub.dll"]
+ENTRYPOINT ["dotnet", "ProcessHub.API.dll"]
