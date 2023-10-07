@@ -26,5 +26,8 @@ Client-Server communication.
 
 ## Architecture 
 
+Each feature is a distinct microservice that is autonomous, independently deployable that represents a container, and responsible for its own data.
+
+
 
 
