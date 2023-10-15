@@ -6,7 +6,7 @@ namespace ProcessHub.Extensions
     {
         public static IServiceCollection AddApplicationServices(this IServiceCollection services)
         {
-            services.AddSingleton<ITasksService, TasksService>();
+            services.AddSingleton<IProcessService, ProcessService>();
 
             return services;
         }

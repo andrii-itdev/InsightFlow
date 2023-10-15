@@ -9,9 +9,9 @@ namespace ProcessHub.Controllers
     [ApiController]
     public class TaskManagerController : ControllerBase
     {
-        private ITasksService _taskService;
+        private IProcessService _taskService;
 
-        public TaskManagerController(ITasksService tasksService)
+        public TaskManagerController(IProcessService tasksService)
         {
             _taskService = tasksService;
         }
@@ -20,21 +20,21 @@ namespace ProcessHub.Controllers
         [HttpPost("Initiate")]
         public ActionResult<int> InitiateTask([FromBody] string name)
         {
-            return _taskService.InitiateTask(name);
+            return _taskService.InitiateProcess(name);
         }
 
         // POST api/<TaskManagerController>/Cancel/TaskHash
         [HttpPost("Cancel/{taskHash}")]
         public void CancelTask(int taskHash)
         {
-            _taskService.CancelTask(taskHash);
+            _taskService.CancelProcess(taskHash);
         }
 
         // POST api/<TaskManagerController>/Run/TaskHash
         [HttpPost("Run/{taskHash}")]
         public void RunTask(int taskHash) 
         {
-            _taskService.RunTask(taskHash);
+            _taskService.RunProcess(taskHash);
         }
     }
 }
