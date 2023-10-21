@@ -10,3 +10,5 @@
 /src/InsightFlow/ProcessHub/ProcessHub.API.csproj.user
 /src/InsightFlow/ProcessHub.Domain/obj
 /src/InsightFlow/ProcessHub.Domain/bin/Debug/net7.0
+/src/InsightFlow/Infrastructure/bin/Debug/net7.0
+/src/InsightFlow/Infrastructure/obj
