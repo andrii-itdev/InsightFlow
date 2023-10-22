@@ -13,13 +13,6 @@ namespace ProcessHub.Controllers
             return nameof(MonitorController);
         }
 
-        // GET api/<MonitorController>/tasks
-        [HttpGet("Tasks")]
-        public IEnumerable<string> GetTasks()
-        {
-            return new string[] { };
-        }
-
         // GET: api/<MonitorController>/TaskHash/Details
         [HttpGet("Task/{taskHash}/Details")]
         public string GetDetails(int taskHash)
