@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using ProcessHub.API.Commands;
 using ProcessHub.API.Models;
-using ProcessHub.Services;
+using ProcessHub.API.Queries;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -13,7 +13,6 @@ namespace ProcessHub.Controllers
     public class ProcessManagerController : ControllerBase
     {
         private readonly IMediator _mediator;
-        private readonly IQueryable<ProcessDTO> processes; 
 
         public ProcessManagerController(IMediator mediator)
         {
@@ -42,9 +41,10 @@ namespace ProcessHub.Controllers
         }
 
         [HttpGet("Processes")]
-        public async Task<IActionResult<IEnumerable<ProcessDTO>>> GetProcesses()
+        public async Task<ActionResult<IEnumerable<ProcessDTO>>> GetProcesses()
         {
-            await this.processes.AsQueryable<ProcessDTO>();
+            var result = await _mediator.Send(new GetAllProcessesQuery());
+            return new ActionResult<IEnumerable<ProcessDTO>>(result);
         }
     }
 }

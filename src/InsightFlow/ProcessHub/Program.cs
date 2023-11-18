@@ -6,16 +6,24 @@ using ProcessHub.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var services = builder.Services;
+
 // Add services to the container.
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddMicrosoftIdentityWebApi(builder.Configuration.GetSection("AzureAd"));
 
-builder.Services.AddControllers();
+services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+services.AddEndpointsApiExplorer();
+services.AddSwaggerGen();
 
-builder.Services.AddApplicationServices();
+services.AddApplicationServices();
+
+services.AddMediatR(mediatrServiceConfiguration =>
+{
+    // Registering all command handlers (classes that implement IRequestHandler<TRequest, TResponse>)
+    mediatrServiceConfiguration.RegisterServicesFromAssemblyContaining(typeof(Program));
+});
 
 var app = builder.Build();
 

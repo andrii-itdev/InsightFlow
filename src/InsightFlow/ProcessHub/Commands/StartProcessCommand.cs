@@ -1,6 +1,8 @@
-﻿namespace ProcessHub.API.Commands
+﻿using MediatR;
+
+namespace ProcessHub.API.Commands
 {
-    public class StartProcessCommand
+    public class StartProcessCommand : IRequest<int>
     {
         public int Key { get; set; }
 
