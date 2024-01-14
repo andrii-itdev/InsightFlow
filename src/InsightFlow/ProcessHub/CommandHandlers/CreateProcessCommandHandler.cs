@@ -9,6 +9,8 @@ namespace ProcessHub.API.CommandHandlers
     {
         public Task<ProcessDTO> Handle(CreateProcessCommand request, CancellationToken cancellationToken)
         {
+            // Insert process into Redis Cache with a corresponding state
+
             return Task.FromResult<ProcessDTO>(new ProcessDTO());
         }
     }

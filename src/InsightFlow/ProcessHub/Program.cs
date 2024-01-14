@@ -18,6 +18,7 @@ services.AddEndpointsApiExplorer();
 services.AddSwaggerGen();
 
 services.AddApplicationServices();
+services.AddRedisCache(builder.Configuration);
 
 services.AddMediatR(mediatrServiceConfiguration =>
 {

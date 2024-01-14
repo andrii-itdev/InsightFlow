@@ -2,7 +2,6 @@
 {
     public record ProcessDTO
     {
-        // Just a stub
-        public Guid ProcessId { get; set; } = Guid.NewGuid();
+        public Guid ProcessKey { get; set; } = Guid.NewGuid();
     }
 }

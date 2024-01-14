@@ -8,6 +8,8 @@ namespace ProcessHub.API.CommandHandlers
     {
         public async Task<int> Handle(StartProcessCommand request, CancellationToken cancellationToken)
         {
+            // Change the state of a process in the Redis Cache
+
             // Just a stub
             return await Task.FromResult(0);
         }

@@ -1,24 +1,25 @@
 ﻿using MediatR;
-using Microsoft.EntityFrameworkCore;
 using ProcessHub.API.Models;
+using ProcessHub.API.Repositories;
 
 namespace ProcessHub.API.Queries
 {
-    public class GetAllProcessesQuery : IRequest<IEnumerable<ProcessDTO>>
+    internal class GetAllProcessesQuery : IRequest<IEnumerable<ProcessDTO>>
     {
     }
 
-    public class GetAllProcessesQueryHandler : IRequestHandler<GetAllProcessesQuery, IEnumerable<ProcessDTO>>
+    internal class GetAllProcessesQueryHandler : IRequestHandler<GetAllProcessesQuery, IEnumerable<ProcessDTO>>
     {
+        private readonly IProcessesRedisRepository processesRepository;
+
+        public GetAllProcessesQueryHandler(IProcessesRedisRepository processesRepository)
+        {
+            this.processesRepository = processesRepository;
+        }
+
         public async Task<IEnumerable<ProcessDTO>> Handle(GetAllProcessesQuery request, CancellationToken cancellationToken)
         {
-            // Just a stub
-            var result = new List<ProcessDTO> {
-                    new ProcessDTO(),
-                    new ProcessDTO(),
-                    new ProcessDTO()
-            };
-            return await Task.FromResult(result);
+            return await processesRepository.GetAll();
         }
     }
 }
