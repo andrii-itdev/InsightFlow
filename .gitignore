@@ -2,13 +2,14 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/src/InsightFlow/.vs/InsightFlow
-/src/InsightFlow/ProcessHub/bin/Debug/net7.0
-/src/InsightFlow/ProcessHub/obj
-/src/InsightFlow/ProcessHub/ProcessHub.csproj.user
-/src/InsightFlow/.vs/ProjectEvaluation
-/src/InsightFlow/ProcessHub/ProcessHub.API.csproj.user
-/src/InsightFlow/ProcessHub.Domain/obj
-/src/InsightFlow/ProcessHub.Domain/bin/Debug/net7.0
-/src/InsightFlow/Infrastructure/bin/Debug/net7.0
-/src/InsightFlow/Infrastructure/obj
+/src/.vs
+/src/Services/InsightFlow/ProcessHub/bin
+/src/Services/InsightFlow/ProcessHub/obj
+/src/Services/InsightFlow/ProcessHub/ProcessHub.csproj.user
+/src/Services/InsightFlow/ProcessHub/ProcessHub.API.csproj.user
+/src/Services/InsightFlow/ProcessHub.Domain/obj
+/src/Services/InsightFlow/ProcessHub.Domain/bin
+/src/Services/InsightFlow/Infrastructure/bin
+/src/Services/InsightFlow/Infrastructure/obj
+/src/Services/InsightFlow/.vs
+/src/Services/InsightFlow/ProcessHub/.config
