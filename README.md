@@ -1,5 +1,5 @@
 
-[Here's the logo]
+![Logo](resources/insightflow-logo.png)
 
 # InsightFlow
 
