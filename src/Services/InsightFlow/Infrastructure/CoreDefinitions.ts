@@ -13,7 +13,8 @@ type User = {};
 type Watcher = {};
 type AlertNotification = {};
 
-type DataEntity = DataRecord | DataSet;
+type DataEntity = DataRecord | DataSet ;
+type Resource = DataEntity | User | Relationship ;
 type DataType = {};
 
 
@@ -81,10 +82,23 @@ type RemovePermission = { userId : Id, what : DataEntity, permissionType : Permi
 
 // Errors
 
+type ResourceNotFound = { resource : Resource } ;
+type NotAllowed = { resource : Resource, permission : PermissionType } ;
+type AlreadyExist = { resource : Resource }
+
 // Infrastructure
 
 type Query = {};
-type Command = {};
+type Command = 
+        CreateProcess |
+        StartProcess | 
+        CancelProcess | 
+
+        CreateDataSet | 
+        DeleteDataSet |
+        AddRecordDataSet |
+        RemoveRecordDataSet
+        ;
 
 type DomainEvent =
     ProcessCreated |
@@ -112,7 +126,30 @@ type DomainEvent =
     DataRecordPermissionsChanged
     ;
 
+type ErrorType = 
+        ResourceNotFound |
+        NotAllowed |
+        AlreadyExist 
+        ;
+
+type Result = DomainEvent | ErrorType
 
 
-type ErrorType = {};
+
+
+const Handle = async (command : Command) : Promise<Result> => {
+    return new Promise( resolve => {
+        
+    });
+}
+
+const CommandHandler = async (command : Command) : Promise<Result> => {
+    try {
+        return await Handle(command);
+    }
+    catch (error) {
+        console.log("Error occured: ", error);
+        throw error;
+    }
+};
 
