@@ -14,3 +14,12 @@
 /src/Services/InsightFlow/.vs
 /src/Services/InsightFlow/ProcessHub/.config
 /src/DataManagement.FunctionalTests/obj
+/src/Services/Common/bin/Debug/net7.0
+/src/Services/Common/obj
+/src/Services/Common/Infrastructure.csproj.user
+/src/Services/DataManagement/DataManagement.FunctionalTests/bin/Debug/net7.0
+/src/Services/DataManagement/DataManagement.FunctionalTests/obj
+/src/Services/Processing/ProcessHub/bin/Debug/net7.0
+/src/Services/Processing/ProcessHub/obj
+/src/Services/Processing/ProcessHub.Domain/bin/Debug/net7.0
+/src/Services/Processing/ProcessHub.Domain/obj
