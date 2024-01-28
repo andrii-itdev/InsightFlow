@@ -13,3 +13,4 @@
 /src/Services/InsightFlow/Infrastructure/obj
 /src/Services/InsightFlow/.vs
 /src/Services/InsightFlow/ProcessHub/.config
+/src/DataManagement.FunctionalTests/obj
