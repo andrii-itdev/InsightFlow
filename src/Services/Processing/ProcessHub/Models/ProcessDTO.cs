@@ -2,6 +2,6 @@
 {
     public record ProcessDTO
     {
-        public Guid ProcessKey { get; set; } = Guid.NewGuid();
+        public int ProcessKey { get; set; }
     }
 }
