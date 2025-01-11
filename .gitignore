@@ -24,3 +24,6 @@
 /src/Services/Processing/ProcessHub.Domain/bin/Debug/net7.0
 /src/Services/Processing/ProcessHub.Domain/obj
 /src/Services/Processing/ProcessHub/.vs/ProcessHub.API
+/src/Services/DataManagement/DataManagement.API/bin/Debug/net7.0
+/src/Services/DataManagement/DataManagement.API/obj
+/src/Services/DataManagement/DataManagement.API/DataManagement.API.csproj.user

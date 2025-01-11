@@ -13,13 +13,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataManagement", "DataManag
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{E2B39AE0-AEF0-4F17-900F-0049E215209C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataManagement.FunctionalTests", "Services\DataManagement\DataManagement.FunctionalTests\DataManagement.FunctionalTests.csproj", "{8DAD9C0C-5394-4540-B420-9AFFA80CCE06}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProcessHub.API", "Services\Processing\ProcessHub\ProcessHub.API.csproj", "{DCEB75A3-1F14-4AED-8965-98856F910C8E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProcessHub.Domain", "Services\Processing\ProcessHub.Domain\ProcessHub.Domain.csproj", "{8FFA513A-7D0F-4B4A-BA86-D192CB7BD3E4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Services\Common\Infrastructure.csproj", "{766C9AC2-156C-42EB-961D-17B4E25E7FE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataManagement.API", "Services\DataManagement\DataManagement.API\DataManagement.API.csproj", "{29440DA7-A8D8-4442-ABC7-497F991B6E65}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataManagement.FunctionalTests", "Services\DataManagement\DataManagement.FunctionalTests\DataManagement.FunctionalTests.csproj", "{B1C4A060-33A0-4934-8CE9-51C78636E96F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,10 +29,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8DAD9C0C-5394-4540-B420-9AFFA80CCE06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8DAD9C0C-5394-4540-B420-9AFFA80CCE06}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8DAD9C0C-5394-4540-B420-9AFFA80CCE06}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8DAD9C0C-5394-4540-B420-9AFFA80CCE06}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DCEB75A3-1F14-4AED-8965-98856F910C8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DCEB75A3-1F14-4AED-8965-98856F910C8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCEB75A3-1F14-4AED-8965-98856F910C8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -43,6 +41,14 @@ Global
 		{766C9AC2-156C-42EB-961D-17B4E25E7FE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{766C9AC2-156C-42EB-961D-17B4E25E7FE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{766C9AC2-156C-42EB-961D-17B4E25E7FE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29440DA7-A8D8-4442-ABC7-497F991B6E65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29440DA7-A8D8-4442-ABC7-497F991B6E65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29440DA7-A8D8-4442-ABC7-497F991B6E65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29440DA7-A8D8-4442-ABC7-497F991B6E65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1C4A060-33A0-4934-8CE9-51C78636E96F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1C4A060-33A0-4934-8CE9-51C78636E96F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1C4A060-33A0-4934-8CE9-51C78636E96F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1C4A060-33A0-4934-8CE9-51C78636E96F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,10 +58,11 @@ Global
 		{C4D40ABE-7FFB-4B9C-B7F9-B775ED73D2B9} = {654DF257-CB86-4744-8D89-6D1CFEB36139}
 		{8265F0F3-9EA1-436D-90EA-E981881C2D4D} = {654DF257-CB86-4744-8D89-6D1CFEB36139}
 		{E2B39AE0-AEF0-4F17-900F-0049E215209C} = {8265F0F3-9EA1-436D-90EA-E981881C2D4D}
-		{8DAD9C0C-5394-4540-B420-9AFFA80CCE06} = {E2B39AE0-AEF0-4F17-900F-0049E215209C}
 		{DCEB75A3-1F14-4AED-8965-98856F910C8E} = {C4D40ABE-7FFB-4B9C-B7F9-B775ED73D2B9}
 		{8FFA513A-7D0F-4B4A-BA86-D192CB7BD3E4} = {C4D40ABE-7FFB-4B9C-B7F9-B775ED73D2B9}
 		{766C9AC2-156C-42EB-961D-17B4E25E7FE5} = {3B38D971-0F82-4E1A-9860-6AB4E9E4FC07}
+		{29440DA7-A8D8-4442-ABC7-497F991B6E65} = {8265F0F3-9EA1-436D-90EA-E981881C2D4D}
+		{B1C4A060-33A0-4934-8CE9-51C78636E96F} = {E2B39AE0-AEF0-4F17-900F-0049E215209C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {20111B30-7857-4267-B788-193AC1FA456F}
