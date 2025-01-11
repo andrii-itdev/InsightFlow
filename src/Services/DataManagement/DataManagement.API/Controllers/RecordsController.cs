@@ -19,7 +19,7 @@ namespace DataManagement.API.Controllers
             _mediator = mediator;
         }
 
-        [HttpPost]
+        [HttpGet]
         [Route("{recordId:guid}")]
         [ProducesResponseType(typeof(RecordResponse), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
