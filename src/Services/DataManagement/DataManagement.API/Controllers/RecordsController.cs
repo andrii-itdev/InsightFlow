@@ -3,6 +3,7 @@ using DataManagement.API.Models;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics.CodeAnalysis;
+using ILogger = Serilog.ILogger;
 
 namespace DataManagement.API.Controllers
 {
@@ -10,10 +11,10 @@ namespace DataManagement.API.Controllers
     [Route("[controller]")]
     public class RecordsController : ControllerBase
     {
-        private readonly ILogger<RecordsController> _logger;
+        private readonly ILogger _logger;
         private readonly IMediator _mediator;
 
-        public RecordsController(ILogger<RecordsController> logger, IMediator mediator)
+        public RecordsController(ILogger logger, IMediator mediator)
         {
             _logger = logger;
             _mediator = mediator;
