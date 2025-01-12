@@ -1,8 +1,6 @@
 
 using DataManagement.API.Extensions;
 using Serilog;
-using System.Data;
-
 
 const string appsettings = "appsettings.json";
 
@@ -15,7 +13,10 @@ try
     var configuration = new ConfigurationBuilder().AddJsonFile(appsettings).Build();
 
     // Adding logging mechanism
-    var loggingConfig = new LoggerConfiguration().ReadFrom.Configuration(configuration);
+    var loggingConfig = new LoggerConfiguration()
+        .ReadFrom.Configuration(configuration)
+        .WriteTo.Async(sinkConfig => sinkConfig.Debug());
+
     Log.Logger = loggingConfig.CreateLogger();
     services.AddSerilog(Log.Logger);
 

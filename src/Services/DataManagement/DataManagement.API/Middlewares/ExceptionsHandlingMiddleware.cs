@@ -21,6 +21,13 @@
             {
                 await _next(context);
             }
+            catch(HttpRequestException ex)
+            {
+                _logger.Error(ex, $"{nameof(HttpClient)} request failed.", nameof(ExceptionsHandlingMiddleware));
+                context.Response.Headers[HeaderNames.ContentType] = MediaTypeNames.Application.Json;
+                context.Response.StatusCode = (int?)ex.StatusCode ?? StatusCodes.Status500InternalServerError;
+                await context.Response.WriteAsJsonAsync(ex.Message);
+            }
             catch (Exception ex)
             {
                 _logger.Error(ex, "An exception is captured in {0}", nameof(ExceptionsHandlingMiddleware));
