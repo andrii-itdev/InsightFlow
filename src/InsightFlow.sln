@@ -19,9 +19,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProcessHub.Domain", "Servic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Services\Common\Infrastructure.csproj", "{766C9AC2-156C-42EB-961D-17B4E25E7FE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataManagement.API", "Services\DataManagement\DataManagement.API\DataManagement.API.csproj", "{29440DA7-A8D8-4442-ABC7-497F991B6E65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataManagement.API", "Services\DataManagement\DataManagement.API\DataManagement.API.csproj", "{29440DA7-A8D8-4442-ABC7-497F991B6E65}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataManagement.FunctionalTests", "Services\DataManagement\DataManagement.FunctionalTests\DataManagement.FunctionalTests.csproj", "{B1C4A060-33A0-4934-8CE9-51C78636E96F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataManagement.Infrastructure", "DataManagement.Infrastructure\DataManagement.Infrastructure.csproj", "{82446AB7-8223-492A-BCE8-F87B5C41A795}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataManagement.Domain", "DataManagement.Domain\DataManagement.Domain.csproj", "{C866BD06-CD76-42CC-B455-D3B50FE43EF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +53,14 @@ Global
 		{B1C4A060-33A0-4934-8CE9-51C78636E96F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1C4A060-33A0-4934-8CE9-51C78636E96F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1C4A060-33A0-4934-8CE9-51C78636E96F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82446AB7-8223-492A-BCE8-F87B5C41A795}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82446AB7-8223-492A-BCE8-F87B5C41A795}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82446AB7-8223-492A-BCE8-F87B5C41A795}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82446AB7-8223-492A-BCE8-F87B5C41A795}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C866BD06-CD76-42CC-B455-D3B50FE43EF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C866BD06-CD76-42CC-B455-D3B50FE43EF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C866BD06-CD76-42CC-B455-D3B50FE43EF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C866BD06-CD76-42CC-B455-D3B50FE43EF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,6 +75,8 @@ Global
 		{766C9AC2-156C-42EB-961D-17B4E25E7FE5} = {3B38D971-0F82-4E1A-9860-6AB4E9E4FC07}
 		{29440DA7-A8D8-4442-ABC7-497F991B6E65} = {8265F0F3-9EA1-436D-90EA-E981881C2D4D}
 		{B1C4A060-33A0-4934-8CE9-51C78636E96F} = {E2B39AE0-AEF0-4F17-900F-0049E215209C}
+		{82446AB7-8223-492A-BCE8-F87B5C41A795} = {8265F0F3-9EA1-436D-90EA-E981881C2D4D}
+		{C866BD06-CD76-42CC-B455-D3B50FE43EF0} = {8265F0F3-9EA1-436D-90EA-E981881C2D4D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {20111B30-7857-4267-B788-193AC1FA456F}

@@ -27,3 +27,6 @@
 /src/Services/DataManagement/DataManagement.API/bin/Debug/net7.0
 /src/Services/DataManagement/DataManagement.API/obj
 /src/Services/DataManagement/DataManagement.API/DataManagement.API.csproj.user
+/src/DataManagement.Domain/bin/Debug/net7.0
+/src/DataManagement.Domain/obj
+/src/DataManagement.Infrastructure/obj
