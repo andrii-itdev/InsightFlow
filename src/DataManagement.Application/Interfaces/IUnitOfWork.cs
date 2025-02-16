@@ -1,8 +1,4 @@
-﻿using System;
-using System.Threading;
-using System.Threading.Tasks;
-
-namespace DataManagement.Infrastructure
+﻿namespace DataManagement.Application.Interfaces
 {
     public interface IUnitOfWork : IDisposable
     {

@@ -1,4 +1,4 @@
-﻿namespace DataManagement.Infrastructure
+﻿namespace DataManagement.Application.Interfaces
 {
     public interface IRepository
     {

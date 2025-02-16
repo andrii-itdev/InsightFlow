@@ -1,4 +1,5 @@
-﻿using DataManagement.Domain.AggregatesModel;
+﻿using DataManagement.Application.Interfaces;
+using DataManagement.Domain.AggregatesModel;
 using MongoDB.Driver;
 using System;
 using System.Threading;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataManagement.Infrastructure
 {
-    public class DataManagementContext : IUnitOfWork
+    internal class DataManagementContext : IUnitOfWork
     {
         private const string RecordsCollectionName = "Records";
 

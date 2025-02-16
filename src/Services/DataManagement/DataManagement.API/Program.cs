@@ -1,5 +1,6 @@
 
 using DataManagement.API.Extensions;
+using DataManagement.Infrastructure;
 using Serilog;
 
 const string appsettings = "appsettings.json";
@@ -31,6 +32,7 @@ try
     // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen();
+    builder.Services.AddInfrastructureServices();
 
 
     var app = builder.Build();

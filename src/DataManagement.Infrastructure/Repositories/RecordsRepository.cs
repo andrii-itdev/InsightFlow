@@ -1,6 +1,8 @@
-﻿namespace DataManagement.Infrastructure.Repositories
+﻿using DataManagement.Application.Interfaces;
+
+namespace DataManagement.Infrastructure.Repositories
 {
-    public class RecordsRepository : IRepository
+    internal class RecordsRepository : IRecordsRepository
     {
         public IUnitOfWork UnitOfWork { get => DataManagementContext; }
         public DataManagementContext DataManagementContext { get; }

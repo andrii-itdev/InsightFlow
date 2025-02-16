@@ -30,3 +30,8 @@
 /src/DataManagement.Domain/bin/Debug/net7.0
 /src/DataManagement.Domain/obj
 /src/DataManagement.Infrastructure/obj
+/src/DataManagement.Application/bin/Debug/net9.0
+/src/DataManagement.Application/obj
+/src/DataManagement.Domain/bin/Debug/net9.0
+/src/DataManagement.Infrastructure/bin/Debug/net9.0
+/src/Services/DataManagement/DataManagement.API/bin/Debug/net9.0
