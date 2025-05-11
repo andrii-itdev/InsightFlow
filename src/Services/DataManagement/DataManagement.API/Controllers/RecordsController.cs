@@ -25,7 +25,7 @@ namespace DataManagement.API.Controllers
         [ProducesResponseType(typeof(RecordResponse), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult> GetRecord([NotNull] Guid recordId)
+        public async Task<ActionResult> GetRecord([NotNull] Guid? recordId = null)
         {
             return Ok();
         }

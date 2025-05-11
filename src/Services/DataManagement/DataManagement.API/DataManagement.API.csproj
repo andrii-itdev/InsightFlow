@@ -22,8 +22,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\DataManagement.Application\DataManagement.Application.csproj" />
-    <ProjectReference Include="..\..\..\DataManagement.Infrastructure\DataManagement.Infrastructure.csproj" />
+    <ProjectReference Include="..\DataManagement.Application\DataManagement.Application.csproj" />
+    <ProjectReference Include="..\DataManagement.Domain\DataManagement.Domain.csproj" />
+    <ProjectReference Include="..\DataManagement.Infrastructure\DataManagement.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

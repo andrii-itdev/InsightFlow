@@ -35,3 +35,13 @@
 /src/DataManagement.Domain/bin/Debug/net9.0
 /src/DataManagement.Infrastructure/bin/Debug/net9.0
 /src/Services/DataManagement/DataManagement.API/bin/Debug/net9.0
+/src/Services/DataManagement/DataManagement.Application/bin/Debug/net9.0
+/src/Services/DataManagement/DataManagement.Application/obj
+/src/Services/DataManagement/DataManagement.Domain/bin/Debug
+/src/Services/DataManagement/DataManagement.Domain/obj
+/src/Services/DataManagement/DataManagement.Infrastructure/bin/Debug/net9.0
+/src/Services/DataManagement/DataManagement.Infrastructure/obj
+/src/Services/DataManagement/DataManagement.API/bin/Release/net9.0
+/src/Services/DataManagement/DataManagement.Application/bin/Release/net9.0
+/src/Services/DataManagement/DataManagement.Domain/bin/Release/net9.0
+/src/Services/DataManagement/DataManagement.Infrastructure/bin/Release/net9.0

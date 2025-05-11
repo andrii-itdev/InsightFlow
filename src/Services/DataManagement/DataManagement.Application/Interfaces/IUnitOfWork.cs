@@ -2,8 +2,8 @@
 {
     public interface IUnitOfWork : IDisposable
     {
-        void BeginTransaction();
-        Task CommitAsync(CancellationToken cancellationToken);
+        Task BeginTransactionAsync(CancellationToken cancellationToken);
+        Task<bool> CommitAsync(CancellationToken cancellationToken);
         Task RollbackAsync(CancellationToken cancellationToken);
     }
 }
