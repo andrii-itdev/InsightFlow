@@ -29,7 +29,7 @@ try
     builder.Services.AddSwaggerGen();
     builder.Services.AddInfrastructureServices();
     builder.Services.AddApplicationServices();
-    //builder.Services.Configure();
+    builder.Services.AddLocalization(options => options.ResourcesPath = string.Empty);
 
 
     var app = builder.Build();

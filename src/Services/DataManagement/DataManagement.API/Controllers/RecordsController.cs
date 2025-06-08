@@ -1,7 +1,9 @@
 using DataManagement.API.Commands;
 using DataManagement.API.Models;
+using DataManagement.API.Resources;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Localization;
 using System.Diagnostics.CodeAnalysis;
 using ILogger = Serilog.ILogger;
 
@@ -11,13 +13,15 @@ namespace DataManagement.API.Controllers
     [Route("[controller]")]
     public class RecordsController : ControllerBase
     {
-        private readonly ILogger _logger;
-        private readonly IMediator _mediator;
+        private readonly ILogger logger;
+        private readonly IMediator mediator;
+        private readonly IStringLocalizer<SharedResource> localizer;
 
-        public RecordsController(ILogger logger, IMediator mediator)
+        public RecordsController(ILogger logger, IMediator mediator, IStringLocalizer<SharedResource> localizer)
         {
-            _logger = logger;
-            _mediator = mediator;
+            this.logger = logger;
+            this.mediator = mediator;
+            this.localizer = localizer;
         }
 
         [HttpGet]
@@ -35,11 +39,12 @@ namespace DataManagement.API.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult> PostRecord([FromBody] PostRecordCommand postRecord)
         {
-            bool success = await _mediator.Send(postRecord);
+            bool success = await mediator.Send(postRecord);
 
             if (!success)
             {
-                return BadRequest();
+                string badRequestMsq = localizer[$"{nameof(RecordsController)}_{nameof(BadRequest)}"];
+                return BadRequest(badRequestMsq);
             }
 
             return Ok();
